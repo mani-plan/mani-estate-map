@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: mani estate map
-Plugin URI: https://example.com/
-Description: estate post type & map
+Plugin URI: https://github.com/mani-plan/mani-estate-map
+Description: estate post type & map query
 Version: 1.0
 Author: manidesign
-Author URI: https://example.jp/
+Author URI: https://manidesign.org/
 License: GPLv2 or later
 */
 

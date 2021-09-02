@@ -131,4 +131,23 @@ class Mani_Estate_Map {
     return $args;
   }
 
+  public function get_map_icon($slugs = array()) {
+    $icon = '';
+    if (count($slugs) == 1 && $slugs[0] == 'solar') {
+      return 'solar';
+    }
+    if ( in_array( 'house', $slugs, true ) ) {
+      $icon = 'house';
+      if ( in_array( 'solar', $slugs, true ) ) {
+        $icon .= '_solar';
+      }
+    }
+    if ( in_array( 'apartment', $slugs, true ) ) {
+      $icon = 'apartment';
+      if ( in_array( 'solar', $slugs, true ) ) {
+        $icon .= '_solar';
+      }
+    }
+    return $icon;
+  }
 }
